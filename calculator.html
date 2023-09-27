@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>კალკულატორი</title>
     <style>
-           * {
+        * {
             margin: 0;
             padding: 0;
             font-family: sans-serif;
@@ -27,6 +27,15 @@
             border-radius: 16px;
         }
 
+        footer {
+            font-family: sans-serif;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: lightcoral;
+            text-align: center;
+        }
+        
         .calculator form input {
             border: 0;
             outline: 0;
@@ -138,6 +147,9 @@
         </form>
     </div>
 </div>
+    <footer>
+        &copy; 2023 GSU &trade;
+    </footer>
 <script>
     let display = document.getElementById('display');
     let lastChar = '';
