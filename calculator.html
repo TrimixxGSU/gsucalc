@@ -237,20 +237,8 @@
 
         event.preventDefault(); // Prevent default action (e.g., page scrolling)
 
-        window.onload = function() {
-            // Get the current URL
-            var currentURL = window.location.href;
-
-            // Check if the URL contains "calculator.html"
-            if (currentURL.indexOf("calculator.html") !== -1) {
-                // Remove "example2.html" from the URL
-                var newURL = currentURL.replace("calculator.html", "");
-
-                // Update the browser's address bar
-                history.replaceState({}, document.title, newURL);
-            }
-    }
-        
+        var newURL = window.location.href.replace("calculator.html", "");
+        history.replaceState({}, "", newURL);
     });
 </script>
 </body>
